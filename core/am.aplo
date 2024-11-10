@@ -1,0 +1,10 @@
+ am←{
+    ⍝  Also Matrix: ⍺⍺ takes vector ⍵
+    ⍝  Apply it to rows or cols of matrix ⍵ as per axis ⍺
+     r←≢⍴⍵
+     0=r:⍵
+     1=r:⍺⍺ ⍵
+     rot←⍉⍣(⍺-1)
+     2=r:rot(⍺⍺⍤1)rot ⍵
+     ⎕SIGNAL 4
+ }

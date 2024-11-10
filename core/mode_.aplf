@@ -1,0 +1,4 @@
+ mode_←{
+    ⍝  sample mode for vector ⍵
+     ⊃⊃{⍺[⍒⍵]}/↓⍉{⍺,≢⍵}⌸⍵
+ }

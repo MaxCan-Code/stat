@@ -1,0 +1,5 @@
+ var←{
+    ⍝  variance
+     ⍺←1
+     ⍺ mean 2*⍨⍵-⍺ mean ⍵
+ }

@@ -1,0 +1,5 @@
+ asc←{
+  ⍝  ascending sort
+     ⍺←1
+     ⍺(asc_ am)⍵
+ }

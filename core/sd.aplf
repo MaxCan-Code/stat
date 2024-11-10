@@ -1,0 +1,5 @@
+ sd←{
+⍝   standard deviation
+     ⍺←1
+     .5*⍨⍺ mean ⍵
+ }

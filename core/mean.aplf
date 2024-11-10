@@ -1,0 +1,6 @@
+ mean←{
+     ⍝ arithmetic mean [on axis ⍺]
+     ⍬≡s←⍴⍵:⍵
+     ⍺←1
+     (+/[⍺]⍵)÷⍺⊃s
+ }
