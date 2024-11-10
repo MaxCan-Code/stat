@@ -1,4 +1,5 @@
  mode_←{
     ⍝  sample mode for vector ⍵
-     ⊃⊃{⍺[⍒⍵]}/↓⍉{⍺,≢⍵}⌸⍵
+    n f←⊂[1]{⍺,≢⍵}⌸⍵
+    n/⍨f=⌈/f
  }

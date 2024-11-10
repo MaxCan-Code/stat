@@ -1,0 +1,4 @@
+ Start;errs
+ ⎕←'Running tests...'
+ errs←1 2 #.core.RunTests'core/tests.csv'
+ ⎕←(1+×≢errs)⊃('All tests passed')(errs)

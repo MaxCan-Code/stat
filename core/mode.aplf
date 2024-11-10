@@ -1,1 +1,6 @@
- mode←{mode_ am⊢⍵}
+ mode←{
+     0=r←≢⍴⍵:⍵
+     1=r:mode_ ⍵
+     ⍺←1
+     mode_¨⊂[⍺]⍵
+ }

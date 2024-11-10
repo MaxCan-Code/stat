@@ -1,1 +1,5 @@
- desc←{desc_ am⊢⍵}
+ desc←{
+    ⍝  descending sort
+     ⍺←1
+     ⍺(desc_ am)⍵
+ }
