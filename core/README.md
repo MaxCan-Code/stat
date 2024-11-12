@@ -1,16 +1,8 @@
 Core functions
 ==============
 
-⍺   The functions all take an axis as an 
-    optional integer left argument. Its default
-    value is 1; that is, unlike APL primitives, 
-    the functions default to the LEADING axis: 
-    the mean of a numerical matrix is the means 
-    of its columns.
-
-⍵   For scalar ⍵, the functions return ⍵
-
-The functions are:
+The functions are monadic and operate on the LEADING axis: 
+e.g. the mean of a numerical matrix is the means of its columns.
 
 function | result
 ---------|-------------------
@@ -22,5 +14,10 @@ med      | median value
 min      | minimum value
 mode     | sample mode
 sd       | standard deviation
+sqr      | square
+sqrt     | square root
 sum      | total
 var      | variance
+
+Functions max, min, sqr, sqrt and sum are syntacic sugar
+and require no tests.
