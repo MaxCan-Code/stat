@@ -1,5 +1,5 @@
  desc←{
-    ⍝  descending sort
-     ⍺←1
-     ⍺(desc_ am)⍵
+  ⍝  descending sort
+     1=≢⍴⍵:⍵[⍒⍵]
+     ⍉(∇⍤1)⍉⍵
  }

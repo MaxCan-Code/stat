@@ -1,6 +1,6 @@
  mode←{
-     0=r←≢⍴⍵:⍵
-     1=r:mode_ ⍵
-     ⍺←1
-     mode_¨⊂[⍺]⍵
+     ⍝ sample mode for vector ⍵
+     mod←{{⍺/⍨⍵=⌈/⍵}/⊂[1]{⍺,≢⍵}⌸⍵}
+     1=≢⍴⍵:mod ⍵
+     mod¨⊂[1]⍵
  }

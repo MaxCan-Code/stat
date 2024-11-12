@@ -1,6 +1,4 @@
  sd←{
-⍝   standard deviation
-     0≡≡⍵:0
-     ⍺←1
-     0.5*⍨⍺ mean ⍵
+⍝   population standard deviation
+     sqrt var ⍵
  }

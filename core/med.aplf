@@ -1,14 +1,6 @@
  med←{
     ⍝  median
-     r←≢shp←⍴⍵
-     0=r:⍵
-     ⍺←1
-     cnt←⍺⊃shp
-     hlf←cnt÷2
-     straddle←~×1|hlf
-     mid←hlf+(0.5)(1 0)⊃⍨1+straddle
-     srtd←⍺ asc ⍵
-     1=r:mean srtd[mid]
-     rot←⍉⍣(⍺-1)
-     ((2÷⍨+⌿)⍣straddle)(rot srtd)[mid;]
+     srtd←asc ⍵
+     ×1|hlf←(≢⍵)÷2:(⌈hlf)⌷srtd
+     ⊃2÷⍨+/(hlf+0 1)⌷¨⊂srtd
  }

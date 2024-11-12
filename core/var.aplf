@@ -1,8 +1,4 @@
  var←{
     ⍝  variance
-     r←≢⍴⍵
-     0=r:0
-     1=r:mean 2*⍨⍵-mean ⍵
-     ⍺←1
-     2 mean 2*⍨↑(⊂[⍺]⍵)-⍺ mean ⍵
+     mean sqr ⍵(-⍤1)mean ⍵
  }

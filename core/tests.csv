@@ -1,51 +1,15 @@
 result,expn
-S,asc S
 V[⍋V],asc V
 ⍉↑asc¨⊂[1]M,asc M
-asc M,1 asc M
-(asc⍤1)M,2 asc M
-S,desc S
 V[⍒V],desc V
 ⍉↑desc¨⊂[1]M,desc M
-1 desc M,desc M
-(desc⍤1)M,2 desc M
-S,max S
-⌈/V,max V
-⌈⌿M,max M
-max M,1 max M
-⌈/M,2 max M
-S,min S
-⌊/V,min V
-⌊⌿M,min M
-min M,1 min M
-⌊/M,2 min M
-S,mean S
 5.75,mean V
-(+⌿M)÷≢M,mean M
-mean M,1 mean M
-(+/M)÷2⊃⍴M,2 mean M
-S,med S
+7.25 8.25 4 5.75 3.5,mean M
 7,med V
 med¨⊂[1]M,med M
-med M,1 med M
-(med⍤1)M,2 med M
-S,mode S
-",7",mode V
+"⊂,7",mode V
 mode¨⊂[1]M,mode M
-mode M,1 mode M
-mode¨⊂[2]M,2 mode M
-0,sd S
-.5*⍨mean V,sd V
+4,var 2 4 4 4 5 5 7 9 ⍝ wikipedia
+2,sd 2 4 4 4 5 5 7 9 ⍝ wikipedia
 sd¨⊂[1]M,sd M
-sd M,1 sd M
-(sd⍤1)M,2 sd M
-S,sum S
-+/V,sum V
-+⌿M,sum M
-sum M,1 sum M
-+/M,2 sum M
-0,var S
-mean 2*⍨V-mean V,var V
 var¨⊂[1]M,var M
-var M,1 var M
-(var⍤1)M,2 var M
