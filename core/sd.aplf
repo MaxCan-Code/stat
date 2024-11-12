@@ -1,4 +1,1 @@
- sd←{
-⍝   population standard deviation
-     sqrt var ⍵
- }
+sd←{(var ⍵)*÷2} ⍝   population standard deviation

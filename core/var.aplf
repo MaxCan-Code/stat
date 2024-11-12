@@ -1,4 +1,1 @@
- var←{
-    ⍝  variance
-     mean sqr ⍵(-⍤1)mean ⍵
- }
+var←{mean 2*⍨ ⍵(-⍤1)mean ⍵}    ⍝  variance

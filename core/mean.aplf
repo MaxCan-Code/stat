@@ -1,4 +1,1 @@
- mean←{
-     ⍝ arithmetic mean
-     (sum ⍵)÷≢⍵
- }
+mean←{(+⌿⍵)÷≢⍵}     ⍝ arithmetic mean

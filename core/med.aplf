@@ -1,6 +1,5 @@
- med←{
-    ⍝  median
-     srtd←asc ⍵
+ med←{ ⍝  median
+     srtd←srt ⍵
      ×1|hlf←(≢⍵)÷2:(⌈hlf)⌷srtd
      ⊃2÷⍨+/(hlf+0 1)⌷¨⊂srtd
  }
