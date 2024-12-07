@@ -1,1 +1,0 @@
-var←{mean 2*⍨ ⍵(-⍤1)mean ⍵}    ⍝  variance

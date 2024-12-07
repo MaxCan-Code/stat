@@ -1,4 +1,0 @@
- sum←{
-     ⍝ arithmetic sum
-    +⌿⍵
- }

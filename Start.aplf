@@ -1,4 +1,4 @@
  Start;errs
  ⎕←'Running tests...'
- errs←1 2 #.core.RunTests'core/tests.csv'
+ errs←1 2 #.core.RunTests'tests/core.csv'
  ⎕←(1+×≢errs)⊃('All tests passed')(errs)
